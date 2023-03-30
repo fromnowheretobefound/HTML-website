@@ -1,3 +1,8 @@
+YOU CAN DOWNLOAD THE NOTEPAD FILE IT HAS THE TUTORIAL AND SOURCE CODE THAN CAN BE EDITED :) ENJOY! OR VIEW THIS AS RAW 
+
+
+
+
 # HTML-website
 Here's a step-by-step tutorial on how to create a basic HTML website: 
 
