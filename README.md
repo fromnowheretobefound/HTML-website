@@ -118,3 +118,5 @@ Step 7: Save and view your website
 Once you've added all the content and styling you want, save your HTML file and open it in your web browser to see your finished website.
 
 That's it! This is a basic overview of how to create a simple HTML website. From here, you can continue to learn more about HTML and CSS and explore more advanced features and techniques.
+
+Have Fun
