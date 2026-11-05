@@ -1,127 +1,53 @@
-YOU CAN DOWNLOAD THE NOTEPAD FILE IT HAS THE TUTORIAL AND SOURCE CODE THAN CAN BE EDITED :) ENJOY! OR VIEW THIS AS RAW 
+# HTML website tutorial
 
+Learn how to create a basic page with HTML and CSS. The downloadable [plain-text tutorial](website%20source%20code.txt) is also available.
 
+## 1. Plan your page
 
+Choose the purpose, audience, and content of your website. Start with a heading and a short paragraph.
 
-# HTML-website
-Here's a step-by-step tutorial on how to create a basic HTML website: 
+## 2. Create an HTML file
 
+Open a plain-text editor and save a new file as `index.html`. In Windows Notepad, select **All files** in the save dialog so the filename does not become `index.html.txt`.
 
-Step 1: Plan your website
-Before starting to create your website, it's important to have a clear idea of what you want to achieve. Consider the purpose of your website, who your target audience is, what kind of content you want to include, and what features you want to offer.
+## 3. Add structure, content, and styling
 
-Step 2: Choose a text editor
-To write your HTML code, you'll need a text editor. You can use any text editor you like, but popular choices include Visual Studio Code, Atom, and Sublime Text.
+Copy this complete example into `index.html`:
 
-Step 3: Create a new HTML file
-Open your text editor and create a new file. Save it with a .html extension. This is the file that will contain all of your HTML code.
-
-Step 4: Add the basic structure of an HTML page
-Every HTML page begins with a document type declaration, followed by the html tag. Inside the html tag, you'll need to include a head tag and a body tag. Here's an example:
-
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Website</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        color: #222;
+        font-family: sans-serif;
+        margin: 2rem;
+        line-height: 1.5;
+      }
+    </style>
   </head>
   <body>
-    <!-- Your content goes here -->
+    <h1>Welcome to my website!</h1>
+    <p>This is some sample text.</p>
   </body>
 </html>
+```
 
+The `head` contains the page title, metadata, and CSS. The `body` contains visible content. The `h1` element creates the main heading, while `p` creates a paragraph.
 
-The head tag contains information about the document, such as the title of the page, while the body tag contains the visible content of the page.
+## 4. View and edit your page
 
-Step 5: Add content to your website
-Inside the body tag, you can add all the content you want to include on your website. This can include text, images, videos, links, and more. Here's an example of how to add some text:
+Save the file and open `index.html` in your browser. Change the paragraph or background color, save again, and refresh the browser to see your changes. No package installation or build command is needed for this example.
 
+## Troubleshooting
 
-<body>
-  <h1>Welcome to my website!</h1>
-  <p>This is some sample text.</p>
-</body>
+- If the browser displays source text, check that the filename ends in `.html`, not `.txt`.
+- If an edit does not appear, save the file and refresh the same file in the browser.
+- Copy only the code inside the HTML code block; tutorial instructions belong outside the HTML file.
 
-
-	In this example, the h1 tag creates a heading, and the p tag creates a paragraph.
-
-Step 6: Style your website with CSS
-While HTML is used to structure the content of your website, CSS is used to style it. You can include CSS code in your HTML file using a style tag, or you can create a separate CSS file and link to it from your HTML file. Here's an example of how to use a style tag to change the background color of your website:
-
-<head>
-  <style>
-    body {
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-
-
-<head>
-  <style>
-    body {
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-
-Sure, I can help you with that! Here's a step-by-step tutorial on how to create a basic HTML website:
-
-Step 1: Plan your website
-Before starting to create your website, it's important to have a clear idea of what you want to achieve. Consider the purpose of your website, who your target audience is, what kind of content you want to include, and what features you want to offer.
-
-Step 2: Choose a text editor
-To write your HTML code, you'll need a text editor. You can use any text editor you like, but popular choices include Visual Studio Code, Atom, and Sublime Text.
-
-Step 3: Create a new HTML file
-Open your text editor and create a new file. Save it with a .html extension. This is the file that will contain all of your HTML code.
-
-Step 4: Add the basic structure of an HTML page
-Every HTML page begins with a document type declaration, followed by the html tag. Inside the html tag, you'll need to include a head tag and a body tag. Here's an example:
-
-php
-Copy code
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <!-- Your content goes here -->
-  </body>
-</html>
-The head tag contains information about the document, such as the title of the page, while the body tag contains the visible content of the page.
-
-Step 5: Add content to your website
-Inside the body tag, you can add all the content you want to include on your website. This can include text, images, videos, links, and more. Here's an example of how to add some text:
-
-css
-Copy code
-<body>
-  <h1>Welcome to my website!</h1>
-  <p>This is some sample text.</p>
-</body>
-In this example, the h1 tag creates a heading, and the p tag creates a paragraph.
-
-Step 6: Style your website with CSS
-While HTML is used to structure the content of your website, CSS is used to style it. You can include CSS code in your HTML file using a style tag, or you can create a separate CSS file and link to it from your HTML file. Here's an example of how to use a style tag to change the background color of your website:
-
-php
-Copy code
-<head>
-  <style>
-    body {
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-
-
-
-In this example, the CSS code sets the background color of the body tag to light gray.
-
-Step 7: Save and view your website
-Once you've added all the content and styling you want, save your HTML file and open it in your web browser to see your finished website.
-
-That's it! This is a basic overview of how to create a simple HTML website. From here, you can continue to learn more about HTML and CSS and explore more advanced features and techniques.
-
-Have Fun
+Once the page works, experiment with links, images with descriptive `alt` text, and a separate CSS file.
