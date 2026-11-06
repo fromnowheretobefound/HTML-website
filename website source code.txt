@@ -1,58 +1,48 @@
-Here's a step-by-step tutorial on how to create a basic HTML website:
+PULSE — DIGITAL KPI MONITORING DASHBOARD
+Original repository established: 2023
+Pulse dashboard update: 2026
+Project owner: Georgia Rachel
+License: MIT (see LICENSE)
 
-Step 1: Plan your website
-Before starting to create your website, it's important to have a clear idea of what you want to achieve. Consider the purpose of your website, who your target audience is, what kind of content you want to include, and what features you want to offer.
+ABOUT THIS PROJECT
+Pulse is a free, open-source dashboard for understanding organizational
+performance: active users, uptime, response time, task completion, network
+traffic, resource allocation, and team progress. It replaces the original
+basic HTML tutorial while preserving the project's 2023 origin.
 
-Step 2: Choose a text editor
-To write your HTML code, you'll need a text editor. You can use any text editor you like, but popular choices include Visual Studio Code, Atom, and Sublime Text.
+MAKE IT YOURS
+1. Open https://georgiarachel07.github.io/pulse-kpi-dashboard/
+2. Select Make it yours.
+3. Enter your organization and your name or role.
+4. Enter your KPI values and resource allocation percentages.
+5. Add or remove teams and enter each team's total and completed tasks.
+6. Select Save my workspace. Your values are saved in this browser and
+   displayed in manual mode; the simulation will not overwrite them.
+7. Select Download my dashboard in the About section to generate a single
+   HTML file containing your workspace, styling, and application code.
+8. Open your downloaded file, edit it, or publish it on your own static host.
+   Charts, icons, and fonts still need an internet connection.
 
-Step 3: Create a new HTML file
-Open your text editor and create a new file. Save it with a .html extension. This is the file that will contain all of your HTML code.
+YOUR OWN REPOSITORY
+Use the repository's template option or fork the project:
+https://github.com/georgiarachel07/pulse-kpi-dashboard
+Copy or edit index.html, style.css, and script.js. Follow README.md to publish
+your own version through GitHub Pages. Preserve the MIT license notice.
 
-Step 4: Add the basic structure of an HTML page
-Every HTML page begins with a document type declaration, followed by the html tag. Inside the html tag, you'll need to include a head tag and a body tag. Here's an example:
+HOW DATA WORKS
+The initial demo uses simulated data and refreshes every three seconds while
+visible. Personal workspaces show your manually entered figures. Local browser
+storage is not a shared team database. Clearing site data removes local saved
+settings. Download your dashboard as a backup. A downloaded file includes the
+figures you export, so only publish information you intend others to see.
+No organization data is sent to an application backend by this project.
 
+SOURCE FILES
+index.html — dashboard layout, editor, and About section
+style.css — responsive dark theme and accessible controls
+script.js — charts, simulation, local workspaces, and download/export actions
+README.md — setup, deployment, customization, and real-world value
+LICENSE — free reuse and modification terms
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <!-- Your content goes here -->
-  </body>
-</html>
-
-
-
-The head tag contains information about the document, such as the title of the page, while the body tag contains the visible content of the page.
-
-Step 5: Add content to your website
-Inside the body tag, you can add all the content you want to include on your website. This can include text, images, videos, links, and more. Here's an example of how to add some text:
-
-<body>
-  <h1>Welcome to my website!</h1>
-  <p>This is some sample text.</p>
-</body>
-
-
-In this example, the h1 tag creates a heading, and the p tag creates a paragraph.
-
-Step 6: Style your website with CSS
-While HTML is used to structure the content of your website, CSS is used to style it. You can include CSS code in your HTML file using a style tag, or you can create a separate CSS file and link to it from your HTML file. Here's an example of how to use a style tag to change the background color of your website:
-
-<head>
-  <style>
-    body {
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-
-
-In this example, the CSS code sets the background color of the body tag to light gray.
-
-Step 7: Save and view your website
-Once you've added all the content and styling you want, save your HTML file and open it in your web browser to see your finished website.
-
-That's it! This is a basic overview of how to create a simple HTML website. From here, you can continue to learn more about HTML and CSS and explore more advanced features and techniques.
+This text file is the current plain-text project guide. The executable source
+is in the files above, which are available in this repository.
