@@ -300,8 +300,8 @@ SOFTWARE.
     const button=$('download-dashboard');button.disabled=true;button.textContent='Preparing your copy…';
     try {
       const load=async(url)=>{const response=await fetch(url);if(!response.ok)throw new Error('Download failed');return response.text();};
-      const css= document.querySelector('style[data-pulse]')?.textContent || await load(document.querySelector('link[href="./style.css"]').href);
-      let code= document.querySelector('script[data-pulse]')?.textContent || await load(document.querySelector('script[src="./script.js"]').src);
+      const css= document.querySelector('style[data-pulse]')?.textContent || await load(document.querySelector('link[href^="./style.css"]').href);
+      let code= document.querySelector('script[data-pulse]')?.textContent || await load(document.querySelector('script[src^="./script.js"]').src);
       const wrapperStart="document.addEventListener('DOMContentLoaded', function () {\n";
       if (code.startsWith(wrapperStart)) code=code.slice(wrapperStart.length,-4);
       const cloneDoc=document.documentElement.cloneNode(true);
@@ -309,7 +309,7 @@ SOFTWARE.
       cloneDoc.querySelector('#team-editor').replaceChildren();
       cloneDoc.querySelector('#workspace-form').reset();
       cloneDoc.querySelector('#editor-error').textContent='';
-      cloneDoc.querySelectorAll('#pulse-config, script[data-pulse], style[data-pulse], link[href="./style.css"], script[src="./script.js"]').forEach(node=>node.remove());
+      cloneDoc.querySelectorAll('#pulse-config, script[data-pulse], style[data-pulse], link[href^="./style.css"], script[src^="./script.js"]').forEach(node=>node.remove());
       const style=document.createElement('style');style.dataset.pulse='';style.textContent=css;cloneDoc.querySelector('head').append(style);
       const embedded=document.createElement('script');embedded.id='pulse-config';embedded.type='application/json';
       const latest=history[history.length-1];
