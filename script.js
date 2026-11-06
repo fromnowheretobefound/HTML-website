@@ -244,6 +244,8 @@ SOFTWARE.
     return {time:history[0].time, users:config.users, uptime:config.uptime, response:config.response, done,total,completion:Math.round(done/total*100), resources:config.resources.slice()};
   }
   function renderIdentity() {
+    $('page-title').textContent = config.manual ? config.organization : 'Performance overview.';
+    $('page-subtitle').textContent = config.manual ? 'Performance overview · ' + config.owner : 'A clear view of what’s moving your organization forward.';
     $('organization-name').textContent = config.organization;
     $('users-comparison').textContent = config.manual ? 'manual entry' : 'vs. first sample';
     $('owner-name').textContent = config.owner;
